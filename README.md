@@ -61,9 +61,82 @@ For this project, we will work on a system with an expanded role model, a set of
 </tbody>
 </table>
 
+<p>The formula for increasing the limit:</p>
+<pre><code class="language-json highlight"><span class="lines" style="--gutter-char-width: 1"><span class="line">new_limit = <span class="ͼd">0.8</span> * current_limit + <span class="ͼd">0.2</span> * value_from_transaction</span></span></code></pre>
+<p>The formula for decreasing the limit:</p>
+<pre><code class="language-json highlight"><span class="lines" style="--gutter-char-width: 1"><span class="line">new_limit = <span class="ͼd">0.8</span> * current_limit - <span class="ͼd">0.2</span> * value_from_transaction</span></span></code></pre>
+
 <br/><br/>
 
+Role model
 
+<table border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td> </td>
+<td>Anonymous</td>
+<td>MERCHANT</td>
+<td>ADMINISTRATOR</td>
+<td>SUPPORT</td>
+</tr>
+<tr>
+<td>POST /api/auth/user</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>DELETE /api/auth/user</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GET /api/auth/list</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>POST /api/antifraud/transaction</td>
+<td>-</td>
+<td>+</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>/api/antifraud/suspicious-ip</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>/api/antifraud/stolencard</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>GET /api/antifraud/history</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr>
+<td>PUT /api/antifraud/transaction</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
 
 Here's the link to the project: https://hyperskill.org/projects/232
 
