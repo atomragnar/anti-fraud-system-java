@@ -1,4 +1,4 @@
-# Anti-Fraud-System
+<h1 data-v-760b2546="" class="mb-4"> Anti-Fraud System </h1>
 
 This is the *Anti fraud systemr* project I made myself.
 
@@ -66,7 +66,6 @@ For this project, we will work on a system with an expanded role model, a set of
 <p>The formula for decreasing the limit:</p>
 <pre><code class="language-json highlight"><span class="lines" style="--gutter-char-width: 1"><span class="line">new_limit = <span class="ͼd">0.8</span> * current_limit - <span class="ͼd">0.2</span> * value_from_transaction</span></span></code></pre>
 
-<br/><br/>
 
 Role model
 
@@ -137,6 +136,8 @@ Role model
 </tr>
 </tbody>
 </table>
+
+<br/><br/>
 
 Here's the link to the project: https://hyperskill.org/projects/232
 
