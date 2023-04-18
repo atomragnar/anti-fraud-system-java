@@ -1,6 +1,6 @@
 <h1 data-v-760b2546="" class="mb-4"> Anti-Fraud System </h1>
 
-This is the *Anti fraud systemr* project I made myself.
+This is the *Anti fraud system project I made myself.
 
 
 <p>
